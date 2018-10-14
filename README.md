@@ -1,9 +1,27 @@
 # SmartContract Architecture on Ethereum
 
-In this repository you can always go to the [network](https://github.com/mesirendon/bsl/network "BSL Network view") in order to check how the project has changed between versions.
-
-For the first step just create a new truffle empty project inside the working folder.
+After creating the empty folder and initializing the truffle project within it, the folder structure looks like this.
 
 ```bash
-truffle init
+.
+├── contracts
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── README.md
+├── test
+├── truffle-config.js
+└── truffle.js
 ```
+
+## contracts
+The folder where Solidity contracts live.
+
+## migrations
+The folder with the scripts to deploy contracts to the specified Blockchain network.
+
+## test
+The folder where the TDD and BDD tests live.
+
+## JS files
+Files to instruct truffle how to connect to Blockchain networks.
