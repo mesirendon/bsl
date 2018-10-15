@@ -1,27 +1,21 @@
 # SmartContract Architecture on Ethereum
 
-After creating the empty folder and initializing the truffle project within it, the folder structure looks like this.
+This version has node dependencies installed as shown in the `package.json` file.
 
-```bash
-.
-├── contracts
-│   └── Migrations.sol
-├── migrations
-│   └── 1_initial_migration.js
-├── README.md
-├── test
-├── truffle-config.js
-└── truffle.js
+```JSON
+{
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  },
+  "dependencies": {
+    "openzeppelin-solidity": "^1.12.0"
+  }
+}
 ```
 
-## contracts
-The folder where Solidity contracts live.
+[OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity "OpenZeppelin Repo") has several contracts and libraries to leverage development with common patterns.
 
-## migrations
-The folder with the scripts to deploy contracts to the specified Blockchain network.
+This project will implement the following diagram:
 
-## test
-The folder where the TDD and BDD tests live.
-
-## JS files
-Files to instruct truffle how to connect to Blockchain networks.
+![ClassDiagram]()
