@@ -2,8 +2,6 @@
 
 ## SpeakerDeck Presentation
 
-<script async class="speakerdeck-embed" data-id="bb16b4fd826147ae94bca57730031207" data-ratio="1.77777777777778" src="https://speakerdeck.com/assets/embed.js"></script>
-
 [SpeakerDeck Presentation](https://speakerdeck.com/mesirendon/smart-contract-architecture-on-ethereum "SpeakerDeck Presentation")
 
 ## Versions
