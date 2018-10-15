@@ -1,27 +1,5 @@
 # SmartContract Architecture on Ethereum
 
-## Conference Interface, BSL and SimpleConference Contract and their Testings
+## WorkshopConference contract and its test
 
-For this version I got a Conference Interface, a SimpleConference Contract implementation and their effects on the BSL Contract.
-
-A little of my original design was changed during implementation.
-
-![ClassDiagram](/ClassDiagram.png "New Diagram")
-
-## Dependencies
-
-For this test I also included some new node dependencies:
-
-```JSON
-{
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1"
-  },
-  "dependencies": {
-    "moment": "^2.22.2",
-    "openzeppelin-solidity": "^1.12.0",
-    "web3": "^1.0.0-beta.36"
-  }
-}
-```
+For this version I've added a new `Conference` implementation called `WorkshopConference`. Its test copies all the tests performed at the `SimpleConference` test, but adds one for the refunding action.
