@@ -18,4 +18,4 @@ This version has node dependencies installed as shown in the `package.json` file
 
 This project will implement the following diagram:
 
-![ClassDiagram]()
+![ClassDiagram](/ClassDiagram.png "Class Diagram")
