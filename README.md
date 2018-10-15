@@ -1,9 +1,27 @@
 # SmartContract Architecture on Ethereum
 
-## BSL Contract and its Testing
+## Conference Interface, BSL and SimpleConference Contract and their Testings
 
-For this version the first test was implemented in order to check the basic behavior of the `BSL` contract.
+For this version I got a Conference Interface, a SimpleConference Contract implementation and their effects on the BSL Contract.
 
-The tests are executed lexicographically, so that's why tests will appear with a number.
+A little of my original design was changed during implementation.
 
-To achieve this, you'll realize that there is a migration called `2_deploy_contracts.js` that will tell how contracts are deployed.
+![ClassDiagram](/ClassDiagram.png "New Diagram")
+
+## Dependencies
+
+For this test I also included some new node dependencies:
+
+```JSON
+{
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  },
+  "dependencies": {
+    "moment": "^2.22.2",
+    "openzeppelin-solidity": "^1.12.0",
+    "web3": "^1.0.0-beta.36"
+  }
+}
+```
