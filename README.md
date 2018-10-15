@@ -1,21 +1,9 @@
 # SmartContract Architecture on Ethereum
 
-This version has node dependencies installed as shown in the `package.json` file.
+## BSL Contract and its Testing
 
-```JSON
-{
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1"
-  },
-  "dependencies": {
-    "openzeppelin-solidity": "^1.12.0"
-  }
-}
-```
+For this version the first test was implemented in order to check the basic behavior of the `BSL` contract.
 
-[OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-solidity "OpenZeppelin Repo") has several contracts and libraries to leverage development with common patterns.
+The tests are executed lexicographically, so that's why tests will appear with a number.
 
-This project will implement the following diagram:
-
-![ClassDiagram](/ClassDiagram.png "Class Diagram")
+To achieve this, you'll realize that there is a migration called `2_deploy_contracts.js` that will tell how contracts are deployed.
