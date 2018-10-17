@@ -66,9 +66,6 @@ contract('Workshop Conference behavior', accounts => {
     balance = web3.utils.fromWei(balance.toString(), 'ether')
     expect(balance).to.eq('0')
   })
-  it('should run this to guarantee previous tests', () => {
-    expect(true).to.be.true
-  })
   it('should allow the owner to withdraw the BSL money', async() => {
     tx = await bsl.withdraw()
     expect(tx.tx.length).to.eq(66)
@@ -82,6 +79,9 @@ contract('Workshop Conference behavior', accounts => {
   it('should have 1 ether or more at the owner account', async() => {
     balance = await web3.eth.getBalance(owner)
     balance = parseFloat( web3.utils.fromWei(balance.toString(), 'ether') )
-    expect(balance).to.above(100)
+    expect(balance).to.above(90)
+  })
+  it('should run this to guarantee previous tests', () => {
+    expect(true).to.be.true
   })
 })
